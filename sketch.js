@@ -98,7 +98,7 @@ function draw()
 //Example of how worldtimeapi works. Not required for angry birds game.
 async function getTime()
 {
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("//worldtimeapi.org/api/timezone/Asia/Kolkata");
     var responseJSON = await response.json();
     console.log(responseJSON);
 
@@ -111,7 +111,7 @@ async function getTime()
 
 async function getBackgroundImage()
 {
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("//worldtimeapi.org/api/timezone/Asia/Kolkata");
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11, 13);
